@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portifolio</title>
+        
+        <link rel="stylesheet" href="./style/global.css">
+        <link rel="stylesheet" href="./style/header.css">
+        <link rel="stylesheet" href="./style/acordeon.css">
+        <link rel="stylesheet" href="./style/languages.css">
+        <link rel="stylesheet" href="./style/portfolio.css">
+        <link rel="stylesheet" href="./style/experience.css">
+        <link rel="stylesheet" href="./style/skills.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="photo">
+                <img src="./img/my-photo.png" alt="My photo">
+            </div>
+    
+            <h1 class="name">Gojō Wakana 五条 新菜</h1>
+            
+            <div class="information">
+                <p class="profrile">High school student</p>
+                <p class="location">Tokio-Jp</p>
+                <p class="phone">
+                    <a href="tel:(+81) 80-98745-432">(+81) 80-98745-432</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:W_Gojo@****.com">W_Gojo@****.com</a>
+                </p>
+            </div>
+        </header>
+        <section class="acordeon">
+            <button class="trigger" type="button">Skills</button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Tolls:</h3>
+                        <ul>
+                            <li>
+                                <img src="./img/skills/csharp.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/DIO.me/javascript/img/skills/java.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/DIO.me/javascript/img/skills/github.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="./img/skills/javascript.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/DIO.me/javascript/img/skills/nodejs.svg" alt="">
+                            </li>
+                        </ul>
+                    </section>
+    
+                    <section class="personal">
+                        <h3>Personal:</h3>
+                        <ul>
+                            <li>Effective Communication</li>
+                            <li>Teamwork</li>
+                            <li>Problem Solving</li>
+                            <li>Adaptability</li>
+                            <li>Time Management</li>
+                            <li>Critical Thinking</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">Languages</button>
+
+            <div class="content">
+                <ul class="languages">
+                    <li>English</li>
+                    <li>Portuguese</li>
+                    <li>Italian</li>
+                    <li>Spanish</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">Portfolio</button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <span class="project">Pokedex</span>
+                        <a href="https://github.com/Drenilson/pokedex.git" target="_blank">
+                            https://github.com/Drenilson/pokedex.git</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">Experience</button>
+
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="poition">Fullstack / Guenness</h3>
+                        <span class="period">Jan 2021 - Current</span>
+                        <p>
+                            Responsible for creating responsive and interactive web applications, with 
+                            a strong understanding of front-end and back-end integration.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="/DIO.me/javascript/script/acordeon.js"></script>
+</body>
+</html>

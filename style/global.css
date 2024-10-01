@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url('/DIO.me/javascript/img/Fundo.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 90%;
+    max-width: 800px;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 90%;
+        max-width: 800px; 
+        align-self: center;
+        margin: 1rem;
+    }
+}
+

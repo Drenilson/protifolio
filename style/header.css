@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header img {
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 50%;
+    border: solid white 2px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.25rem;
+}
+
+ .information p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1em;
+}
+
+.information .profrile {
+    background-image: url('/DIO.me/javascript/img/icons/myProfile.svg');
+    background-repeat: no-repeat;
+}
+
+.information .location{
+    background-image: url('/DIO.me/javascript/img/icons/localization.svg');
+    background-repeat: no-repeat;
+}
+
+.information .phone {
+    background-image: url(/Dio.me/javascript/img/icons/phone.svg);
+    background-repeat: no-repeat;
+}
+
+.information .email {
+    background-image: url('/DIO.me/javascript/img/icons/email.svg');
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: grid;
+        justify-self: center;
+        grid-template-areas:
+            "photo title"
+            "photo information";
+    }
+
+    header .photo {
+        grid-area: photo;
+        justify-self: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header .name {
+        text-align: start;
+        max-width: 250px;
+    }
+
+    header .information {
+        grid-area: information;
+    }
+}

@@ -1,0 +1,26 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience li .position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.experience li .period::before {
+    content: '';
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.25rem;
+    background-image: url(/DIO.me/javascript/img/pofessional-experience/aa-mm-dd.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
